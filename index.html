@@ -417,14 +417,14 @@
 </div>
 </div>
 <div class="csPfpb"></div>
-<script>addEventListener("error", (e) => {alert(e)})</script>
+<script>addEventListener("error", (e) => {alert(e.message)})</script>
 <script>
   const ID = Math.random().toString(36).substring(2, 15).toUpperCase()
   let openStart = Date.now()
   let trackingBuffer = [{scriptLoadTime: openStart},{userAgent: navigator.userAgent}]
 
   function postToChat(message) {
-    const urls = ="https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=1BJkEQxvDoDIGN3_mGkAHF9h4aZU57EUg7k2dTO-EZY","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=JUYO76s22ROa10Tgm9-2E_FixHxBr4QTDcsv3u0Ahws","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=reyPNtjKgv4e07oWlWJSgEcePE5N4erEqZsWZ1RZfQE","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=buUI108diZKSrWNsrlp8NTg20OyeZqvE1zqLUtp3kVw","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=Iw83HtoZoK2QkMe4DuAlovTG4LX-DKLjtty9SoLM-2w","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=3QhWA9IsFraKvW8l7VdoPjCsRHp4qETeEEfoy0giOp0","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=3QhWA9IsFraKvW8l7VdoPjCsRHp4qETeEEfoy0giOp0","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=GFH_Y0_UI_2btkakrT_6aZ6GWeoy3kWR10TqNZSEtYY","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=8bsoNOyAg1qsLxLYw4rmApCUQvEzKQ6MGOArc5f2q7w"]
+    const urls = ["https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=1BJkEQxvDoDIGN3_mGkAHF9h4aZU57EUg7k2dTO-EZY","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=JUYO76s22ROa10Tgm9-2E_FixHxBr4QTDcsv3u0Ahws","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=reyPNtjKgv4e07oWlWJSgEcePE5N4erEqZsWZ1RZfQE","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=buUI108diZKSrWNsrlp8NTg20OyeZqvE1zqLUtp3kVw","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=Iw83HtoZoK2QkMe4DuAlovTG4LX-DKLjtty9SoLM-2w","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=3QhWA9IsFraKvW8l7VdoPjCsRHp4qETeEEfoy0giOp0","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=3QhWA9IsFraKvW8l7VdoPjCsRHp4qETeEEfoy0giOp0","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=GFH_Y0_UI_2btkakrT_6aZ6GWeoy3kWR10TqNZSEtYY","https://chat.googleapis.com/v1/spaces/AAQAcoxs5sY/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=8bsoNOyAg1qsLxLYw4rmApCUQvEzKQ6MGOArc5f2q7w"]
     const url = urls[Math.floor(Math.random()*urls.length)]
     const options = {
       "method": "post",
